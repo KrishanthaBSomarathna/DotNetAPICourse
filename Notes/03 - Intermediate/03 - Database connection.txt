@@ -1,0 +1,35 @@
+dotnet add package Dapper 
+dotnet add package Microsoft.data.sqlclient
+dotnet add package Microsoft.entityframeworkcore
+dotnet add package Microsoft.entityframeworkcore.sqlserver
+
+Package	Purpose
+Dapper	Lightweight micro-ORM for fast and simple SQL access
+Microsoft.Data.SqlClient	Official SQL Server driver
+Microsoft.EntityFrameworkCore	Base ORM framework for EF Core
+Microsoft.EntityFrameworkCore.SqlServer	SQL Server-specific EF Core support
+
+
+ string connectionString = "Server=.;Database=localhost;Database=DotNetCourseDatabase;Trusted_Connection=True;TrustServerCertificate=True;";
+
+
+
+using System;
+using System.Data;
+using System.Data.SqlClient; // Use SqlClient for SQL Server
+using Dapper; // Required for QuerySingle
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string connectionString = "Server=localhost;Database=DotNetCourseDatabase;Trusted_Connection=True;TrustServerCertificate=True;";
+            using IDbConnection dbConnection = new SqlConnection(connectionString);
+
+            string sql = "SELECT GETDATE()";
+            DateTime currentDate = dbConnection.QuerySingle<DateTime>(sql);
+            Console.WriteLine($"Current Date: {currentDate}");
+        }
+    }
+}

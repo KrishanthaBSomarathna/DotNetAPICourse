@@ -1,0 +1,56 @@
+model class
+
+namespace HelloWorld.Model
+{
+    public class Computer
+        {
+            public string MotherBoard { get; set; }
+            public int CPUCores { get; set; }
+            public bool HasWifi { get; set; }
+            public bool HasLTE { get; set; }
+            public DateTime ReleaseDate { get; set; }
+            public decimal Price { get; set; }
+            public string VideoCard { get; set; }
+
+            public Computer()
+            {
+                MotherBoard = "";
+                VideoCard = "";
+            }
+        }
+}
+main class
+
+using HelloWorld.Model;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        
+
+        static void Main(string[] args)
+        {
+            Computer computer = new Computer()
+            {
+                MotherBoard = "ASUS PRIME Z390-P",
+                CPUCores = 4,
+                HasWifi = true,
+                HasLTE = false,
+                ReleaseDate = DateTime.Now,
+                Price = 1299.99m,
+                VideoCard = "GeForce GTX 1060"
+            };
+
+            computer.HasWifi = false;
+
+            Console.WriteLine(computer.MotherBoard);
+            Console.WriteLine(computer.CPUCores);
+            Console.WriteLine(computer.HasWifi);
+            Console.WriteLine(computer.HasLTE);
+            Console.WriteLine(computer.ReleaseDate);
+            Console.WriteLine(computer.Price);
+            Console.WriteLine(computer.VideoCard);
+        }
+    }
+}

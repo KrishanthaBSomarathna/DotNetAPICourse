@@ -1,0 +1,63 @@
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] myGrocery = new string[4];
+
+            myGrocery[0] = "Milk";
+            myGrocery[1] = "Eggs";
+            myGrocery[2] = "Bread";
+            myGrocery[3] = "Apples";
+
+            Console.WriteLine(myGrocery[0]);
+            Console.WriteLine(myGrocery[1]);
+            Console.WriteLine(myGrocery[2]);
+            Console.WriteLine(myGrocery[3]);
+
+            List<string> myGroceryList = new List<string>();
+            myGroceryList.Add("Milk");
+            myGroceryList.Add("Eggs");
+            myGroceryList.Add("Bread");
+            myGroceryList.Add("Apples");
+            Console.WriteLine(myGroceryList[0]);
+            Console.WriteLine(myGroceryList[1]);
+            Console.WriteLine(myGroceryList[2]);
+            Console.WriteLine(myGroceryList[3]);
+
+            IEnumerable<string> myGroceryIEnumerable = new List<string>
+            {
+                "Milk", "Eggs", "Bread", "Apples"
+            };
+
+            List<string> mySecondList = myGroceryIEnumerable.ToList();
+
+            int[,] myMultiDimensionalArray =
+            {
+                {1,2},
+                {3,4},
+                {5,6}
+            };
+
+            Console.WriteLine(myMultiDimensionalArray[0,0]);
+
+
+
+            Dictionary<string,int> myDictionary = new Dictionary<string,int>();
+
+            myDictionary["Milk"] = 1;
+            myDictionary["Eggs"] = 2;
+            myDictionary["Bread"] = 3;
+            myDictionary["Apples"] = 4;
+
+            Console.WriteLine(myDictionary["Milk"]);
+            Console.WriteLine(myDictionary["Eggs"]);
+            Console.WriteLine(myDictionary["Bread"]);
+            Console.WriteLine(myDictionary["Apples"]);
+
+         
+
+        }
+    }
+}

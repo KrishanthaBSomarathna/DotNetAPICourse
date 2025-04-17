@@ -112,6 +112,7 @@ namespace HelloWorld
             totalValue = 0;
 
             totalValue = GetSum(intsToCompress);
+            totalMul = GetMul(intsToCompress);
 
             Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
 
@@ -132,6 +133,14 @@ namespace HelloWorld
             foreach(int intForCompression in intsToCompress)
             {
                 totalValue += intForCompression;
+            }
+            return totalValue;
+        }
+
+        static private int GetMul(int[] ints){
+            int totalValue = 1;
+            foreach(int intForCompression in ints){
+                totalValue *= intForCompression;
             }
             return totalValue;
         }

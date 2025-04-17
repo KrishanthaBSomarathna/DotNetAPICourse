@@ -1,0 +1,23 @@
+Visual Studio Code && .NET SDK
+
+https://dotnet.microsoft.com/en-us/download
+
+https://code.visualstudio.com/Download?WT.mc_id=dotnet-35129-website
+
+Azure Data Studio && MS SQL Server
+
+https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16
+
+https://www.microsoft.com/en-us/sql-server/sql-server-downloads (Developer Version)
+
+Postman
+
+https://www.postman.com/downloads/
+
+Git Repo
+
+https://github.com/DomTripodi93/DotNetAPICourse
+
+Azure CLI tools
+
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli

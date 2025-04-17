@@ -1,0 +1,12 @@
+dotnet new <TemplateType>
+
+console
+webapi
+gitignore
+
+-n <App Name> or --name <App Name>
+-o <output directory> or --output <output directory>
+-lang <Language> or --language <language>
+
+
+dotnet run or dotnet watch run

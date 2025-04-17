@@ -1,0 +1,12 @@
+dotnet new webapi -n DotnetAPI
+
+dotnet add package Swashbuckle.AspNetCore = swager UI
+
+"ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=TestDB;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificates=true"
+
+
+dapper,automapper,Microsoft.Data.SqlClient
+
+
+create DATA Folder

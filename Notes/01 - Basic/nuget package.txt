@@ -1,0 +1,27 @@
+Nuget package source and C# extensions in VS Code
+Hello!
+
+In the next lecture we will make sure that we are all connected to a nuget package source, and get a few extensions installed in VS Code to make sure that intellisense in VS Code will work for you throughout the course.
+
+
+
+First we will check if we already have a nuget source with the following command:
+dotnet nuget list source
+
+Next we will attempt to add the nuget.org source with the following command:
+dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
+
+For the add source command I will be copying it from the text above, and I suggest that you do the same to avoid typos and save yourself some time.
+
+
+
+Finally we will open VS Code and install the following extensions
+
+C#
+
+C# Dev Kit
+
+
+
+See you in the next lecture!
+Dominic
